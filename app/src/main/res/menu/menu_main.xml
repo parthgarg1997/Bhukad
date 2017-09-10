@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.parth.bhukad.MainActivity">
+    <group android:menuCategory="alternative">
+        <item
+            android:id="@+id/add_menu"
+            android:orderInCategory="1"
+            app:showAsAction="never"
+            android:title="Add Item">
+        </item>
+        <item
+            android:title="Show Item"
+            android:orderInCategory="3"
+            android:id="@+id/displayer" />
+        <item
+            android:title="Delete  Item"
+            android:orderInCategory="2"
+            android:id="@+id/delete_menu"
+            android:visible="true" />
+    </group>
+</menu>

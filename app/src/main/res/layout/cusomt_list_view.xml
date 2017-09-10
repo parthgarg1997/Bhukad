@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    tools:background="?attr/colorPrimary">
+
+    <TextView
+        android:text="0"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/quantity_shower"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@android:color/background_light" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/quantity_shower"
+        android:layout_toEndOf="@+id/quantity_shower"
+        android:id="@+id/food_name_shower"
+        android:textSize="24sp" />
+
+    <Button
+        android:text="+"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/button4"
+        android:layout_below="@+id/food_name_shower"
+        android:layout_toRightOf="@+id/quantity_shower"
+        android:layout_toEndOf="@+id/quantity_shower"
+        android:background="@android:color/holo_red_light" />
+
+    <Button
+        android:text="-"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/food_name_shower"
+        android:layout_toRightOf="@+id/button4"
+        android:layout_toEndOf="@+id/button4"
+        android:id="@+id/button5"
+        android:background="@android:color/holo_orange_light" />
+
+</RelativeLayout>
